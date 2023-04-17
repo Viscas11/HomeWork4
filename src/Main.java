@@ -5,15 +5,34 @@ public class Main {
         task1();
         task2();
     }
+
     public static void task1() {
         System.out.println("Задача 1");
-      int IOS = 1;
-      int Android = 0;
-         if (IOS == 1) {
-             System.out.println("Установите версию приложения для IOS по ссылке");
-         }
-         if (Android == 0) {
-             System.out.println("Установите версию приложения для андроид по ссылке");
-         }
+        int clientOS = 1;
+        int IOS = 1;
+        int Android = 0;
+        if (clientOS == IOS) {
+            System.out.println("Установите версию приложения для IOS по ссылке");
+        }
+        if (clientOS == Android) {
+            System.out.println("Установите версию приложения для Android по ссылке");
+        }
     }
+
+    public static void task2() {
+        System.out.println("Задача 2");
+        int clientOS = 1;
+        int clientDeviceYear = 2015;
+        int IOS = 1;
+        int Android = 0;
+        if (clientOS == IOS && clientDeviceYear <= 2015) {
+            System.out.println("Установите облегченную версию приложения для IOS по ссылке");
+          } else if (clientOS == IOS && clientDeviceYear > 2015) {
+            System.out.println("Установите версию приложения для IOS по ссылке");}
+        if (clientOS == Android && clientDeviceYear <= 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+          } else if (clientOS == Android && clientDeviceYear > 2015) {
+                System.out.println("Установите версию приложения для Android по ссылке");
+            }
+        }
 }
