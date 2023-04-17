@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1() {
@@ -35,4 +36,14 @@ public class Main {
                 System.out.println("Установите версию приложения для Android по ссылке");
             }
         }
+    public static void task3() {
+        System.out.println("Задача 3");
+        int year = 400;
+        if (year % 4 == 0) {
+            if ((year % 100 != 0) || (year % 400 ==0));
+            System.out.println(year + " год высокосный ");
+        } else {
+            System.out.println(year + " год не являестя високосным ");
+        }
+    }
 }
